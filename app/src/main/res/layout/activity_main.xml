@@ -95,7 +95,8 @@
             android:textSize="16sp"
             android:gravity="left"
             android:paddingLeft="18dp"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
