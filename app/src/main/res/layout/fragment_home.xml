@@ -26,29 +26,56 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv1"
-            android:text="Personal details"
-            android:textColor="#888888"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:layout_marginTop="70dp"/>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/tv1"-->
+<!--            android:text="Personal details"-->
+<!--            android:textColor="#888888"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="70dp"/>-->
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bt1"
-            android:text="Date Picker"/>
+<!--        <ImageView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.158"-->
+<!--            app:srcCompat="@drawable/person_ico" />-->
 
-        <Button
+        <WebView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bt2"
-            android:text="Time Picker"/>
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:id="@+id/wview">
+        </WebView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt1"
+                android:text="Date Picker"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt2"
+                android:text="Time Picker"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
 
     </LinearLayout>
 

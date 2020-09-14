@@ -60,7 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="25"
                 android:text="About me"
-                android:onClick="gallery"
+                android:onClick="aboutMe"
                 android:textAllCaps="false"/>
 
             <Button
@@ -68,7 +68,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="25"
                 android:text="Work Experience"
-                android:onClick="contactus"
+                android:onClick="workExperience"
                 android:textAllCaps="false"/>
 
             <Button
@@ -76,7 +76,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="25"
                 android:text="Contact Us"
-                android:onClick="contactus"
+                android:onClick="contactUs"
                 android:textAllCaps="false"/>
         </LinearLayout>
 

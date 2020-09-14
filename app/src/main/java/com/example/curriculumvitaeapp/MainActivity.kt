@@ -14,10 +14,23 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.curriculumvitaeapp.ui.aboutme.AboutMeFragment
+import com.example.curriculumvitaeapp.ui.contactdetails.ContactDetailsFragment
+import com.example.curriculumvitaeapp.ui.home.HomeFragment
+import com.example.curriculumvitaeapp.ui.workexperience.WorkExperienceFragment
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    // Fragment
+    lateinit var fmanager: FragmentManager
+    lateinit var tx: FragmentTransaction
 
     lateinit var  drawerLayout: DrawerLayout
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -47,6 +60,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.setNavigationItemSelectedListener(this)
+
+        // Fragment
+        fmanager = supportFragmentManager
+        tx = fmanager.beginTransaction()
+        tx.add(R.id.frame1, HomeFragment())
+        tx.commit()
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -109,6 +130,35 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         else {
             super.onBackPressed()
         }
+    }
+
+    // Fragments
+    fun home(view: View) {
+        tx = fmanager.beginTransaction()
+        // when the user selects the Home button, we are replacing the HomeFragment
+        tx.replace(R.id.frame1, HomeFragment())
+        tx.commit()
+    }
+
+    fun aboutMe(view: View) {
+        tx = fmanager.beginTransaction()
+        // when the user selects the Home button, we are replacing the HomeFragment
+        tx.replace(R.id.frame1, AboutMeFragment())
+        tx.commit()
+    }
+
+    fun workExperience(view: View) {
+        tx = fmanager.beginTransaction()
+        // when the user selects the Home button, we are replacing the HomeFragment
+        tx.replace(R.id.frame1, WorkExperienceFragment())
+        tx.commit()
+    }
+
+    fun contactUs(view: View) {
+        tx = fmanager.beginTransaction()
+        // when the user selects the Home button, we are replacing the HomeFragment
+        tx.replace(R.id.frame1, ContactDetailsFragment())
+        tx.commit()
     }
 }
 

@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebViewClient
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.curriculumvitaeapp.R
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -27,5 +29,12 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
         return root
+
+        //Web page
+        wview.settings.javaScriptEnabled = true
+        wview.settings.builtInZoomControls = true
+        wview.webViewClient = WebViewClient()
+
+        wview.loadUrl("file:///android_asset/home.html")
     }
 }
