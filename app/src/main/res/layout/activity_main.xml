@@ -93,7 +93,8 @@
             android:text="@string/name_qualif"
             android:textSize="16sp"
             android:gravity="left"
-            android:paddingLeft="15dp"/>
+            android:paddingLeft="18dp"
+            android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
