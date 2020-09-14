@@ -31,10 +31,10 @@ class HomeFragment : Fragment() {
         return root
 
         //Web page
-        wview.settings.javaScriptEnabled = true
-        wview.settings.builtInZoomControls = true
-        wview.webViewClient = WebViewClient()
-
-        wview.loadUrl("file:///android_asset/home.html")
+//        wview.settings.javaScriptEnabled = true
+//        wview.settings.builtInZoomControls = true
+//        wview.webViewClient = WebViewClient()
+//
+//        wview.loadUrl("file:///android_asset/home.html")
     }
 }

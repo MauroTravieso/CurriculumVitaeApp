@@ -14,4 +14,16 @@
 
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="name_qualif">"John Doe\nQualified Android Programmer"</string>
+
+    <string name="summary">"I count on several years of experience, working with Android Kotlin developments to enrich UI activities to give the user a great quality experience."</string>
+
+    <string name="achievements">"I have participated in the XII Annual Android Coding Marathon, obtaining the 15th place in Teams over an group of 15,000 teams form different continents, as well as I was recognized with the "Fastest Coding Award" for two years consecutively."</string>
+
+    <string name="coordinates">"* Website: www.kotlin_coder.com \n* Youtube channel: Kotlin Coder \n* Vlog: Modern Kotlin Practices. "</string>
+
+
+
+
 </resources>

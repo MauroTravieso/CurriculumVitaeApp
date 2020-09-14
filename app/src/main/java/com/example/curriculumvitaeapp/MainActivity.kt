@@ -66,8 +66,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         tx = fmanager.beginTransaction()
         tx.add(R.id.frame1, HomeFragment())
         tx.commit()
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
