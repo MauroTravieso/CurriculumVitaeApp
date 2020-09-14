@@ -25,7 +25,16 @@
 
     <string name="coordinates">"* Website: www.kotlin_coder.com \n* Youtube channel: Kotlin Coder \n* Vlog: Modern Kotlin Practices. "</string>
 
+    <!-- About Me -->
+    <string name="aboutMe">Hi! I am a Java developer with over 3 years of experience. I have worked with
+        object oriented programming, Spring Framework, relational and non-relational databases to build
+        dynamic web applications.  I am currently enrolled in Mobile Device
+        Programming course and learning to build android apps.  </string>
 
+    <string name="aboutMe2nd">
+        I have also worked with cross-functional team, multi-cultural workplace and agile.
+        In my free time, I enjoy reading books, watching movies and travelling.
+    </string>
 
 
 </resources>
