@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     lateinit var fmanager: FragmentManager
     lateinit var tx: FragmentTransaction
 
+    lateinit var homeFragment: HomeFragment
+    lateinit var aboutMeFragment: AboutMeFragment
+    lateinit var workExperienceFragment: WorkExperienceFragment
+    lateinit var contactDetailsFragment: ContactDetailsFragment
+
     lateinit var  drawerLayout: DrawerLayout
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -84,21 +89,52 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return when (item.itemId) {
 
             R.id.nav_home -> {
+                homeFragment = HomeFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame1,homeFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+
                 Toast.makeText(applicationContext, "Home Selected", Toast.LENGTH_LONG).show()
                 true
             }
 
             R.id.nav_aboutme -> {
+
+                aboutMeFragment = AboutMeFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame1,aboutMeFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+
                 Toast.makeText(applicationContext, "About Me Selected", Toast.LENGTH_LONG).show()
                 true
             }
 
             R.id.nav_workexperience -> {
+
+                workExperienceFragment = WorkExperienceFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame1,workExperienceFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+
                 Toast.makeText(applicationContext, "Work Experience Selected", Toast.LENGTH_LONG).show()
                 true
             }
 
             R.id.nav_contactdetails -> {
+
+                contactDetailsFragment = ContactDetailsFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame1,contactDetailsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+
                 Toast.makeText(applicationContext, "Contact Details Selected", Toast.LENGTH_LONG).show()
                 true
             }
