@@ -36,5 +36,29 @@
         In my free time, I enjoy reading books, watching movies and travelling.
     </string>
 
+    <string name="work_experience">PROFESSIONAL EXPERIENCE
+
+CAREER NOTE:
+    Completed on-campus studies and currently taking distance education courses to complete a Master\'s
+    Degree in Computer Science (Available for full-time, W-2 employment).LIYANET ENGINEERING and TECHNOLOGY
+    (Formerly Liya Enterprise Ltd), Asmara, Eritrea• 2015-2018 Software engineer specializing in Java/J2EE
+    technologies to develop applications for different clients.
+
+Senior Software Engineer • 2015-2018
+    Planned, designed and proposed new development projects. Contributed to all aspects of the software
+    development life cycle for new and existing applications. Applied new technologies to ongoing projects.
+    Supervised and mentored junior programmers.
+
+Tasks Performed:
+•	Played key role in design, development, and deployment of application to production.
+•	Designed database schema and implemented using MySQL.
+•	Exposed services through REST-ful design.
+•	Wrote Unit and integration tests for system
+•	Used Maven to build the modules, Jenkins and Git as code repository
+•	Participated in daily scrums and sprint planning
+
+Achievements:
+•	Deployed application for Ministry of Water, Land and Environment for management of water usage throughout Eritrea.
+</string>
 
 </resources>
